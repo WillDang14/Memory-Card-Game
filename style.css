@@ -19,7 +19,7 @@ body {
 
     gap: 16px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
@@ -37,7 +37,7 @@ body {
         grid-template-columns: repeat(4, 90px);
         
         /* gap: 8px; */
-        gap: 6px;
+        gap: 5px;
     }
 }
 
@@ -82,7 +82,7 @@ Sau đó thì xóa hết, vì bài này dùng JS để built elements bên trong
 @media (max-width: 460px) {    
     .tile {
         border: 3px solid #444;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
