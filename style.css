@@ -79,7 +79,7 @@ Sau đó thì xóa hết, vì bài này dùng JS để built elements bên trong
 
 @media (max-width: 460px) {    
     .tile {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
