@@ -22,31 +22,21 @@ body {
     border: 1px solid red;
 }
 
+
+
 @media (max-width: 600px) {
-    
     .tiles {
         grid-template-columns: repeat(4, 100px);
-
         gap: 12px;
-
     }
-
-
 }
 
 
-
-@media (max-width: 460px) {
-    
+@media (max-width: 460px) {    
     .tiles {
-
         grid-template-columns: repeat(4, 90px);
-
         gap: 8px;
-
     }
-
-
 }
 
 
@@ -85,6 +75,14 @@ Sau đó thì xóa hết, vì bài này dùng JS để built elements bên trong
     display: grid;
     place-items: center;
 }
+
+
+@media (max-width: 460px) {    
+    .tile {
+        font-size: 1rem;
+    }
+}
+
 
 
 
