@@ -15,12 +15,38 @@ body {
 
     /* 4 columns, mỗi column width 100px */
     /* grid-template-columns: repeat(4, 100px); */
-    /* grid-template-columns: repeat(4, 130px); */
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: repeat(4, 130px);
 
     gap: 16px;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
+}
+
+@media (max-width: 600px) {
+    
+    .tiles {
+        grid-template-columns: repeat(4, 100px);
+
+        gap: 12px;
+
+    }
+
+
+}
+
+
+
+@media (max-width: 460px) {
+    
+    .tiles {
+
+        grid-template-columns: repeat(4, 90px);
+
+        gap: 8px;
+
+    }
+
+
 }
 
 
@@ -50,11 +76,14 @@ Sau đó thì xóa hết, vì bài này dùng JS để built elements bên trong
 
 
     /* tự thêm vô, cái này kết hợp với JS để căn center cho chữ bên trong */
-    text-align: center;
+    /* text-align: center; */
 
-    line-height: 120px;
+    /* line-height: 120px; */
     
     font-size: 1.1rem;
+
+    display: grid;
+    place-items: center;
 }
 
 
