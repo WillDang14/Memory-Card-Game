@@ -15,7 +15,8 @@ body {
 
     /* 4 columns, mỗi column width 100px */
     /* grid-template-columns: repeat(4, 100px); */
-    grid-template-columns: repeat(4, 130px);
+    /* grid-template-columns: repeat(4, 130px); */
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
 
     gap: 16px;
 
