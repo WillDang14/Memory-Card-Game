@@ -1,0 +1,127 @@
+body {
+    background: #333;
+    margin: 0;
+}
+
+/* ============================================================================ */
+/* Chú ý phân biệt "s" là frame bọc ngoài */
+.tiles {
+    margin: 48px auto;
+
+    /* Căn giữa bằng Margin auto thì phải có width */
+    width: max-content;
+
+    display: grid;
+
+    /* 4 columns, mỗi column width 100px */
+    /* grid-template-columns: repeat(4, 100px); */
+    grid-template-columns: repeat(4, 130px);
+
+    gap: 16px;
+
+    /* border: 1px solid red; */
+}
+
+
+/* ============================================================================ */
+/* Chú ý là lúc đầu bài thì có 6 tile bên trong ".tiles" để hình dung cho dễ.
+
+Sau đó thì xóa hết, vì bài này dùng JS để built elements bên trong <div class="tiles">.
+
+==>> class ".tile" viết trước để khi JS tạo ra class thì tự động áp dụng các thuộc tính được khai báo ở CSS
+
+*/
+.tile {
+    /* width đã được khai báo ở .tiles */
+    /* height: 100px; */
+    /* height: 120px; */
+    aspect-ratio: 1 / 1;
+
+    background: #111;
+
+    border: 5px solid #444;
+
+    cursor: pointer;
+
+    
+    /* Dùng cái này để tắt hiện tượng highlight khi dùng cursor=pointer trong mobile  */
+    -webkit-tap-highlight-color: transparent;
+
+
+    /* tự thêm vô, cái này kết hợp với JS để căn center cho chữ bên trong */
+    text-align: center;
+
+    line-height: 120px;
+    
+    font-size: 1.1rem;
+}
+
+
+
+
+/* ============================================================================ */
+/* 
+Chú ý: 
+
+1) khi khai báo:
+        grid-template-columns: repeat(4, 130px);
+    thì chiều rộng/width của mỗi element sẽ là 130px.
+    
+    Sau đó khi khai báo:
+        border: 5px solid #444;
+    thì chiều rộng của content bên trong chỉ còn là (130 - 2*5) = 120px
+
+    ==>> như vậy CSS GRID giống như "box-sizing: border-box"
+
+2) đó là lý do vì sao height khai là 120px chứ không phải là 130px
+    ==> vì như vậy thì mới ra hình vuông
+
+3) Dùng "aspect-ratio: 1 / 1;" có vẻ giải quyết được vấn đề "hình vuông"
+    ==> không cần tính cụ thể pixel cho height
+*/
+
+
+/* ============================================================================ */
+a {
+    display: block;
+    
+    padding: 10px 30px;
+    
+    margin: 20px auto;    
+    width: max-content;
+
+    font-size: 1.5rem;
+
+    border-radius: 10px;
+    
+    background: #ebebeb;
+    
+    border: none;
+
+    text-decoration: none;
+}
+
+
+/* ============================================================================ */
+/* Reset Button */
+
+button {
+    display: block;
+    
+    padding: 10px 30px;
+    
+    margin: 20px auto;    
+    width: max-content;
+
+    font-size: 1.5rem;
+
+    border-radius: 10px;
+    
+    background: #ebebeb;
+    
+    border: none;
+
+    text-decoration: none;
+}
+
+
