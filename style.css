@@ -125,13 +125,14 @@ Chú ý:
 p {
     /* display: block; */
     
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
+    padding: 10px 20px;
     
     /* margin: 20px auto; */
     margin: 3rem auto 2rem;
 
     /* width: max-content; */
-    width: 40%;
+    width: 50%;
 
     /* font-size: 1.5rem; */
     font-size: 1.25rem;
@@ -147,8 +148,17 @@ p {
 
     text-align: center;
 
-
+    line-height: 1.5;
 }
+
+
+@media (max-width: 520px) {    
+    p {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
 
 
 /* ============================================================================ */
