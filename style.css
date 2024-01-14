@@ -6,8 +6,10 @@ body {
 /* ============================================================================ */
 /* Chú ý phân biệt "s" là frame bọc ngoài */
 .tiles {
-    margin: 48px auto;
-
+    
+/*     margin: 48px auto; */
+    margin: 4rem auto;
+    
     /* Căn giữa bằng Margin auto thì phải có width */
     width: max-content;
 
@@ -119,7 +121,7 @@ Chú ý:
 
 
 /* ============================================================================ */
-a {
+/* a {
     display: block;
     
     padding: 10px 30px;
@@ -136,7 +138,7 @@ a {
     border: none;
 
     text-decoration: none;
-}
+} */
 
 
 /* ============================================================================ */
