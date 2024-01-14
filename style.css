@@ -121,25 +121,32 @@ Chú ý:
 
 
 /* ============================================================================ */
-a {
+p {
     /* display: block; */
     
     padding: 10px 30px;
     
-    margin: 20px auto;    
-    width: max-content;
+    /* margin: 20px auto; */
+    margin: 3rem auto;
 
-    font-size: 1.5rem;
+    /* width: max-content; */
+    width: 40%;
+
+    /* font-size: 1.5rem; */
+    font-size: 1.25rem;
 
     border-radius: 10px;
     
-    background: #ebebeb;
+    /* background: #ebebeb; */
+    background: #cfcfcf;
     
     border: none;
 
     /* text-decoration: none; */
 
     text-align: center;
+
+
 }
 
 
@@ -151,7 +158,8 @@ button {
     
     padding: 10px 30px;
     
-    margin: 20px auto;    
+    margin: 20px auto;
+
     width: max-content;
 
     font-size: 1.5rem;
